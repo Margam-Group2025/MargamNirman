@@ -3,7 +3,6 @@ import React from 'react'
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 import CountUp from 'react-countup';
-import { div } from 'framer-motion/client';
 
 const statsData =[
   {
@@ -33,7 +32,7 @@ const Stats = () => {
   return (
     <div ref={ref} className='mt-16 xl:mt-32 bg-primary py-10 w-full'>
       <div className='container mx-auto h-full'>
-        <div className='text-white flex justify-between items-center flex-wrap gap-y-6 md:flex-nowrap h-full flex-row xl:text-left'>
+        <div className='text-white flex justify-between items-center flex-wrap gap-y-6 md:flex-nowrap h-full flex-row xl:text-center'>
           {statsData.map((item,index)=>{
             return(
               <div className='w-full' key={index}>
