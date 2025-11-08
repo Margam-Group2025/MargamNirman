@@ -3,6 +3,7 @@ import React from 'react'
 import { RiArrowRightUpLine } from 'react-icons/ri';
 import {Link as ScrollLink} from 'react-scroll';
 import NavMobile from './NavMobile';
+import Logo from './Logo'
 const Links =[
   {name: 'Home', to: 'home'},
   {name: 'About', to: 'about'},
@@ -17,7 +18,9 @@ const Header = () => {
     <div className='container mx-auto'>
       <div className='flex items-center justify-between'>
       {/* logo */}
-      <div className=''>Logo</div>
+      <div>
+        <Logo/>
+      </div>
       <nav className='hidden xl:flex items-center gap-12'>
       <ul className='flex'>
         {Links.map((link, index) => {
