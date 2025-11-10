@@ -32,7 +32,7 @@ const Header = () => {
             after:duration-300 hover:after:scale-x-100 hover:after:origin-left 
             mr-[42px] last:mr-0 cursor-pointer'
             >
-              <ScrollLink to={link.path} 
+              <ScrollLink to={link.to} 
               smooth 
               spy 
               className="cursor-pointer"

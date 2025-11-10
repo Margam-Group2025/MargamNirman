@@ -3,7 +3,7 @@ import { RiPhoneFill , RiMailFill } from 'react-icons/ri'
 import Socials from './Socials'
 const Topbar = () => {
   return (
-    <section className='py-4 xl:h-16 xl:py-0 bg-gradient-to-t from-[#ffc221] to-[#ffd76e] 
+    <section className='py-4 xl:h-16 xl:py-0 bg-gradient-to-t from-[#f6cb56] to-[#efbc3b] 
      flex items-center '
      id="home">
       <div className='container mx-auto '>
