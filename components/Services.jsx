@@ -10,6 +10,7 @@ import {
   MdOutlineAddHomeWork,
 } from "react-icons/md";
 import { PiWallFill, PiUserGearFill } from "react-icons/pi";
+import { FaTools } from "react-icons/fa";
 
 // Services data
 const servicesData = [
@@ -35,7 +36,7 @@ const servicesData = [
     title: "Construction Services",
     description:
       "From foundation to finishing touches, our construction services cover every aspect of building your dream home or commercial space. We prioritize quality craftsmanship, timely delivery, and budget-friendly solutions.",
-    icon: <MdOutlineAddHomeWork size={40} />,
+    icon: <FaTools size={40} />,
     imageUrl: "/services/construction.jpg",
     serviceList: [
       "Residential Construction",

@@ -4,14 +4,14 @@ import FaqItem from "./FaqItem";
 
 const faqItemsData = [
   {
-    title: "What is your return policy?",
+    title: "What kind of projects does Margam Nirman handle?",
     content:
-      "Our return policy allows returns within 30 days of purchase with a valid receipt.",
+      "We specialize in residential, commercial, and farm-based projects, offering complete construction and interior solutions.",
   },
   {
-    title: "How to Visit Our Project?",
+    title: "Do you provide turnkey construction services?",
     content:
-      "You can visit our project by scheduling a tour through our website or contacting our support team.",
+      "Yes, we manage everything from design to handover — including materials, labor, and supervision.",
   },
   {
     title: "Do you offer customer support?",
@@ -19,14 +19,14 @@ const faqItemsData = [
       "Yes, we offer 24/7 customer support through various channels including phone, email, and live chat.",
   },
   {
-    title: "Where are you located?",
+    title: "Can Margam Nirman handle pan-India projects?",
     content:
-      "We are located in San Francisco, California, with offices worldwide.",
+      "Absolutely. We’re headquartered in Odisha with an expansion plan for all major Indian cities.",
   },
   {
-    title: "What payment methods do you accept?",
+    title: "Do you offer interior design for existing homes?",
     content:
-      "We accept various payment methods including credit cards, PayPal, and bank transfers.",
+      "Yes, our design team provides full interior renovation and customization for new or existing homes.",
   },
 ];
 
