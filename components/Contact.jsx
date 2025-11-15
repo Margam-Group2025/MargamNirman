@@ -24,7 +24,7 @@ const Contact = () => {
                 <div>
                   <h5 className='text-[22px] font-semibold font-primary landing-d-none mb-2'>Chat With Us</h5>
                   <p className='mb-4'>Our team here to help you</p>
-                  <p className='font-semibold text-primary'>abc@gmail.com</p>
+                  <p className='font-semibold text-primary'>margamnirman@gmail.com</p>
                 </div>
                </div>
               <div className='flex items-start gap-[20px]'>
@@ -44,7 +44,7 @@ const Contact = () => {
                 <div>
                   <h5 className='text-[22px] font-semibold font-primary landing-d-none mb-2'>Office</h5>
                   <p className='mb-4'>Come to our office </p>
-                  <p className='font-semibold text-primary'>Margam Nirman , Jaydev vihar , Bhubaneswar</p>
+                  <p className='font-semibold text-primary'>Margam Nirman,3rd Floor,C/o-Hdfc bank,Jaydev Vihar, Bhubaneswar,odisha 751013</p>
                 </div>
               </div>
             </div>

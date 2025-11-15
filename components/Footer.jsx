@@ -42,7 +42,7 @@ const Footer = () => {
             <ul className="flex flex-col gap-5">
               <li className="flex items-start gap-4 hover:text-white transition-all">
                 <RiMapPin2Fill className="text-accent text-xl mt-1" />
-                <p>Margam Nirman, Jaydev Vihar, Bhubaneswar</p>
+                <p>Margam Nirman,3rd Floor,C/o-Hdfc bank,Biju Pattnaik College Rd,Jaydev Vihar, Bhubaneswar,odisha 751013</p>
               </li>
               <li className="flex items-center gap-4 hover:text-white transition-all">
                 <RiMailFill className="text-accent text-xl" />
@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-4 hover:text-white transition-all">
                 <RiPhoneFill className="text-accent text-xl" />
-                <p>+91 1234567890</p>
+                <p>+91 7749950999</p>
               </li>
             </ul>
           </div>

@@ -30,6 +30,7 @@ const servicesData = [
       "Customer Support Integration",
     ],
     thumbs: ["/services/ecommerce1.jpg", "/services/ecommerce2.jpg"],
+    link: "https://www.bricknbar.com/"
   },
   {
     key: "construction-services",
@@ -47,6 +48,7 @@ const servicesData = [
       "Post-Construction Support",
     ],
     thumbs: ["/services/construction1.jpg", "/services/construction2.jpg"],
+    link: "https://www.bricknbar.com/"
   },
   {
     key: "real-estate-services",
@@ -64,6 +66,7 @@ const servicesData = [
       "Client-Centric Approach",
     ],
     thumbs: ["/services/realestate1.jpg", "/services/realestate2.jpg"],
+    link: "https://www.nirmalyasaiannex.com/"
   },
   {
     key: "consultation-services",
@@ -81,6 +84,7 @@ const servicesData = [
       "Ongoing Support and Follow-Up",
     ],
     thumbs: ["/services/consultation1.jpg", "/services/consultation2.jpg"],
+    link: "https://www.nirmalyasaiannex.com/"
   },
 ];
 
@@ -180,7 +184,9 @@ const Services = () => {
                             ))}
                           </ul>
 
-                          <Button text="Learn More" />
+                          <a href={item.link} target="_blank" rel="noopener noreferrer">
+                           <Button text="Learn More" />
+                           </a>
                         </div>
                       </motion.div>
                     </TabsContent>

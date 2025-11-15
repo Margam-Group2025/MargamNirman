@@ -11,25 +11,25 @@ const workData = [
   {
     img: "/works/img1.webp",
     name: "Work 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "A luxury triplex project showcasing modern architecture, smart layouts, and premium finishes.",
     link: "https://www.google.com/",
   },
   {
     img: "/works/img2.webp",
     name: "Work 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Elegant apartment complex blending modern comfort with eco-friendly construction.",
     link: "https://www.google.com/",
   },
   {
     img: "/works/img3.webp",
     name: "Work 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Every corner of this residence reflects thoughtful planning, from its smart home integrations to its high-end finishes.",
     link: "https://www.google.com/",
   },
   {
     img: "/works/img4.webp",
     name: "Work 4",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Premium materials and elegant textures come together to create a home that feels both contemporary and inviting.",
     link: "https://www.google.com/",
   },
 ];
@@ -56,7 +56,7 @@ const Work = () => {
           className="text-center max-w-[540px] mx-auto mb-20"
         >
           <Pretitle text="Our Work" center />
-          <h2 className="h2 mb-3">Discover Our Projects</h2>
+          <h2 className="h2 mb-3"> Our Signature Creations</h2>
           <p className="mb-11 max-w-[450px] mx-auto text-muted-foreground">
             Explore a selection of our recent projects that showcase our
             expertise and commitment to excellence. From innovative designs to

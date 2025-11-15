@@ -5,12 +5,12 @@ import CountUp from "react-countup";
 
 const statsData = [
   {
-    endCountNum: 25,
+    endCountNum: 15,
     endCountText: "%",
     text: "Years of Experience",
   },
   {
-    endCountNum: 150,
+    endCountNum: 11,
     endCountText: "+",
     text: "Projects Completed",
   },
@@ -20,9 +20,9 @@ const statsData = [
     text: "Client Satisfaction",
   },
   {
-    endCountNum: 50,
+    endCountNum: 10,
     endCountText: "+",
-    text: "Awards Won",
+    text: "Achivements",
   },
 ];
 
