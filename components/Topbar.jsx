@@ -14,14 +14,14 @@ const Topbar = () => {
               <div className='w-8 h-8 bg-primary text-white flex items-center justify-center'>
                 <RiPhoneFill size={20} />
               </div>
-              <p className='font-medium text-primary '>+123 456 7890</p>
+              <p className='font-medium text-primary '>+91 7749950999</p>
             </div>
             {/* mail */}
             <div className='flex items-center gap-3'>
               <div className='w-8 h-8 bg-primary text-white flex items-center justify-center'>
                 <RiMailFill size={20} />
               </div>
-              <p className='font-medium text-primary '>email.com</p>
+              <p className='font-medium text-primary '>margamnirman@gmail.com</p>
               </div>
           </div>
           {/* socials */}
