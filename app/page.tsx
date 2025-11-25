@@ -43,7 +43,6 @@ export default function Home() {
       {/* Page sections */}
       <Hero />
       <About />
-      <Stats />
       <Services />
       <Work />
       <Testimonal />
