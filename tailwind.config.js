@@ -33,9 +33,9 @@ module.exports = {
       boxShadow:{
         'custom-light': '0 4px 54px a0px rgba(18, 19, 21, 0.06)',
       },
-      backgroundImage: {
-        hero: "url(/hero.jpeg)",
-      },
+      // backgroundImage: {
+      //   hero: "url('/hero.png')",
+      // },
     },
   },
   plugins: [],
