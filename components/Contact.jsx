@@ -12,8 +12,8 @@ const Contact = () => {
           <div className='w-full xl:max-w-[380px] xl:pr-[70px] xl:border-border/40 h-[640px]'>
            <h4 className='text-[26px] font-primary font-bold mb-6'>Contact us</h4>
            <p className='mb-9'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita hic soluta iure iste quos porro debitis beatae minima doloremque.
-            </p>
+            Get in touch with us to discuss your vision. From initial consultation to project completion, we ensure clear communication, 
+            expert planning, and reliable execution. Contact us today and take the first step toward building something exceptional.            </p>
             {/* contact item */}
             <div className='flex flex-col gap-[20px] mb-16'>
               {/* contact item */}
@@ -57,10 +57,7 @@ const Contact = () => {
           <div className='flex-1'>
             <h2 className='h2 mb-3 '>Request A Quote</h2>
             <p className='mb-9'>
-              Lorem ipsum dolor sit amet consectetur,
-               adipisicing elit. Iure explicabo recusandae optio? 
-               Ipsa aspernatur eaque ducimus quis, incidunt sequi sit cum tenetur beatae voluptates velit culpa, voluptatem, rem reiciendis atque.
-            </p>
+              Have a question or ready to start your project? Contact us today and our team will get back to you as soon as possible.            </p>
             <Form />
           </div>
         </div>
