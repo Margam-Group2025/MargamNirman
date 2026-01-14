@@ -46,7 +46,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-4 hover:text-white transition-all">
                 <RiMailFill className="text-accent text-xl" />
-                <p>margamnirman@gmail.com</p>
+                <p>admin@margamnirman.com</p>
               </li>
               <li className="flex items-center gap-4 hover:text-white transition-all">
                 <RiPhoneFill className="text-accent text-xl" />

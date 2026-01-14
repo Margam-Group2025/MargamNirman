@@ -1,19 +1,13 @@
 "use client";
 
-import Hero from "@/components/Hero";
-import Topbar from "@/components/Topbar";
-import Header from "@/components/Header";
-import About from "@/components/About";
-import Stats from "@/components/Stats";
-import Services from "@/components/Services";
-import Work from "@/components/Work";
-import Testimonal from "@/components/Testimonal";
-import Faq from "@/components/Faq";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import "./globals.css";
 import { useEffect, useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Home  from "@/components/Home";
+import Topbar from "@/components/Topbar";
 
-export default function Home() {
+export default function RootLayout() {
   const [headerActive, setHeaderActive] = useState(false);
 
   useEffect(() => {
@@ -21,34 +15,30 @@ export default function Home() {
       setHeaderActive(window.scrollY > 200);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <div>
-      {/* Topbar always visible */}
-      <Topbar />
-      <Header />
-      {/* Sticky header that appears after scrolling */}
-      <div
-        className={`fixed top-0 left-0 w-full z-50 transform transition-transform duration-500 ${
-          headerActive ? "translate-y-0" : "-translate-y-full"
-        }`}
-      >
+       <div>
+        <Topbar />
+        {/* Normal Header */}
         <Header />
-      </div>
 
-      {/* Page sections */}
-      <Hero />
-      <About />
-      <Services />
-      <Work />
-      <Testimonal />
-      <Faq />
-      <Contact />
-      <Footer />
-    </div>
+        {/* Sticky Header */}
+        <div
+          className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${
+            headerActive ? "translate-y-0" : "-translate-y-full"
+          }`}
+        >
+          <Header />
+        </div>
+
+        {/* HOME PAGE CONTENT (NO ROUTING) */}
+        <main>
+          <Home />
+        </main>
+
+        <Footer />
+      </div>
   );
 }

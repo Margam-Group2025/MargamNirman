@@ -2,16 +2,19 @@ import type { Metadata } from "next";
 import { Barlow, DM_Sans } from "next/font/google";
 import "./globals.css";
 
+export const dynamic = "force-static"; 
 const dmSans = DM_Sans({
   variable: "--font-dmSans",
   subsets: ["latin"],
-  weight:['100', '200', '300', '400', '500', '600', '700' ,'800', '900']
+  weight: ["100","200","300","400","500","600","700","800","900"],
+  display: "swap",
 });
 
 const barlow = Barlow({
   variable: "--font-barlow",
   subsets: ["latin"],
-  weight:['100']
+  weight: ["100"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,14 +24,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.variable} ${barlow.variable} antialiased`}
-      >
+      <body className={`${dmSans.variable} ${barlow.variable} antialiased`}>
         {children}
       </body>
     </html>

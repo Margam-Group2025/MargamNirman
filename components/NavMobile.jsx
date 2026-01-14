@@ -16,6 +16,7 @@ const Links = [
   { name: 'About', to: 'about' },
   { name: 'Services', to: 'services' },
   { name: 'Projects', to: 'projects' },
+  { name: 'Consultation', to: 'consultation' },
   { name: 'Contact', to: 'contact' },
 ]
 

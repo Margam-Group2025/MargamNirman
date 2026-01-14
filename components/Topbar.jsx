@@ -21,7 +21,7 @@ const Topbar = () => {
               <div className='w-8 h-8 bg-primary text-white flex items-center justify-center'>
                 <RiMailFill size={20} />
               </div>
-              <p className='font-medium text-primary '>margamnirman@gmail.com</p>
+              <p className='font-medium text-primary '>admin@margamnirman.com</p>
               </div>
           </div>
           {/* socials */}

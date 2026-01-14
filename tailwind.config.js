@@ -24,11 +24,20 @@ module.exports = {
         secondary: ['var(--font-barlow)', 'sans-serif'],
       },
     extend: {
+       fontFamily: {
+        sans: ['var(--font-dmSans)'],
+        heading: ['var(--font-barlow)'],
+      },
       colors: {
         primary: '#002d72',
         secondary: '#666666',
         accent: '#d4af37',
-        border: '#d7d7d7'
+        border: '#d7d7d7',
+        background: '#f9f9f9',
+        'soft-gold': '#bfa14a',
+        foreground: '#121315',
+        'soft-black': '#121315',
+        'soft-white': '#ffffff',
       },
       boxShadow:{
         'custom-light': '0 4px 54px a0px rgba(18, 19, 21, 0.06)',
