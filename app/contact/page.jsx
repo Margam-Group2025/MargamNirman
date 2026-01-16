@@ -113,7 +113,7 @@ export default function ContactPage() {
               {
                 icon: Clock,
                 title: 'Business Hours',
-                content: 'Mon - Sat: 10:00 AM - 7:00 PM',
+                content: 'Fri - Wed: 10:00 AM - 7:00 PM',
                 link: null,
               },
             ].map((item, index) => (
@@ -293,9 +293,8 @@ export default function ContactPage() {
                       Office Hours
                     </h4>
                     <p className="font-paragraph text-base text-foreground">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday: 10:00 AM - 4:00 PM<br />
-                      Sunday: Closed
+                      Friday - Wednesday 10:00 AM - 7:00 PM<br />
+                      Thusday: Closed
                     </p>
                   </div>
 
@@ -323,7 +322,7 @@ export default function ContactPage() {
                     href="tel:+911234567890"
                     className="text-soft-gold hover:underline font-medium"
                   >
-                    +91 123 456 7890
+                    +91 7749950999
                   </a>
                 </p>
               </div>

@@ -1,9 +1,9 @@
 const projectData = [
   {
-    _id: "green-valley-residency",
+    _id: "green-valley",
     projectName: "Green Valley Residency",
     projectCategory: "Residential",
-    projectStatus: "Completed",
+    projectStatus: "Ongoing",
     shortDescription:
       "A premium residential housing project offering modern living spaces with excellent connectivity and green surroundings.",
     fullDescription:
@@ -14,9 +14,9 @@ const projectData = [
   },
 
   {
-    _id: "city-square-commercial",
-    projectName: "City Square Commercial Complex",
-    projectCategory: "Commercial",
+    _id: "Sai Annexe Residency",
+    projectName: "Sai Annexe Residency",
+    projectCategory: "Residential",
     projectStatus: "Ongoing",
     shortDescription:
       "A state-of-the-art commercial complex designed for offices, retail outlets, and corporate spaces.",
@@ -42,8 +42,8 @@ const projectData = [
   },
 
   {
-    _id: "margam-business-park",
-    projectName: "Margam Business Park",
+    _id: "margam-business park",
+    projectName: "Margam Business",
     projectCategory: "Commercial",
     projectStatus: "Upcoming",
     shortDescription:
@@ -56,32 +56,32 @@ const projectData = [
   },
 
   {
-    _id: "silver-oak-villas",
-    projectName: "Silver Oak Villas",
+    _id: "Grand Exotica",
+    projectName: "Grand Exotica ",
     projectCategory: "Residential",
-    projectStatus: "Ongoing",
+    projectStatus: "completed",
     shortDescription:
-      "Luxury villa project offering spacious layouts, private gardens, and premium amenities in a serene environment.",
+      "Luxury project offering spacious layouts, private gardens, and premium amenities in a serene environment.",
     fullDescription:
       "Silver Oak Villas is a premium residential villa project designed for those who value privacy, luxury, and spacious living. Each villa is thoughtfully crafted with expansive interiors, private outdoor spaces, and high-end finishes. Surrounded by greenery and located away from the city’s congestion, the project offers a tranquil lifestyle while still maintaining convenient access to major city areas.",
     projectLocation: "Pahala, Bhubaneswar",
     completionDate: "2025-06-30",
-    mainImage: "https://images.unsplash.com/photo-1572120360610-d971b9b78825"
+    mainImage: "https://newprojects.99acres.com/projects/grand_realty/grand_exotica/0oqudbq_1762953423_671917271_O.jpg"
   },
 
-  {
-    _id: "urban-heights-apartments",
-    projectName: "Urban Heights Apartments",
-    projectCategory: "Residential",
-    projectStatus: "Completed",
-    shortDescription:
-      "High-rise residential apartments designed for modern urban living with world-class facilities.",
-    fullDescription:
-      "Urban Heights Apartments is a high-rise residential development offering modern homes equipped with contemporary amenities and lifestyle features. The project is designed to cater to urban professionals and families seeking comfort, convenience, and community living. With well-planned layouts, recreational facilities, and a prime city location, Urban Heights delivers an elevated living experience.",
-    projectLocation: "Kharavel Nagar, Bhubaneswar",
-    completionDate: "2022-11-18",
-    mainImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00"
-  },
+  // {
+  //   _id: "urban-heights-apartments",
+  //   projectName: "Urban Heights Apartments",
+  //   projectCategory: "Residential",
+  //   projectStatus: "Completed",
+  //   shortDescription:
+  //     "High-rise residential apartments designed for modern urban living with world-class facilities.",
+  //   fullDescription:
+  //     "Urban Heights Apartments is a high-rise residential development offering modern homes equipped with contemporary amenities and lifestyle features. The project is designed to cater to urban professionals and families seeking comfort, convenience, and community living. With well-planned layouts, recreational facilities, and a prime city location, Urban Heights delivers an elevated living experience.",
+  //   projectLocation: "Kharavel Nagar, Bhubaneswar",
+  //   completionDate: "2022-11-18",
+  //   mainImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00"
+  // },
 
   {
     _id: "bricknbar-logistics-warehouse",
@@ -98,8 +98,8 @@ const projectData = [
   },
 
   {
-    _id: "elite-corporate-tower",
-    projectName: "Elite Corporate Tower",
+    _id: "Highway Gardens",
+    projectName: "Highway Gardens",
     projectCategory: "Commercial",
     projectStatus: "Upcoming",
     shortDescription:

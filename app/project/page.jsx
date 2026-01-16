@@ -161,12 +161,12 @@ export default function ProjectsPage() {
 
                     {/* Meta Information */}
                     <div className="space-y-3 mb-8 pb-8 border-b border-foreground/5">
-                      {project.projectLocation && (
+                      {/* {project.projectLocation && (
                         <div className="flex items-center gap-3">
                           <MapPin className="h-5 w-5 text-soft-gold flex-shrink-0" />
                           <span className="font-paragraph text-sm text-foreground font-medium">{project.projectLocation}</span>
                         </div>
-                      )}
+                      )} */}
 
                       {project.completionDate && (
                         <div className="flex items-center gap-3">
@@ -179,13 +179,13 @@ export default function ProjectsPage() {
                     </div>
 
                     {/* CTA Button */}
-                    <Link
+                    {/* <Link
                       href={`/project/${project._id}`}
                       className="inline-flex items-center gap-2 text-primary hover:text-soft-gold transition-colors font-paragraph font-semibold text-sm tracking-wide group/btn"
                     >
                       View Project
                       <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                    </Link>
+                    </Link> */}
                   </div>
                 </motion.div>
               ))}
