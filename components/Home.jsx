@@ -22,7 +22,7 @@ const CANONICAL_SERVICES = [
     title: 'Real Estate Services',
     description:
       'Bespoke residential & commercial property solutions tailored to your exacting standards.',
-    link: '/service',
+    link: '/servicepage',
     imageId: 'service-real-estate',
   },
   {
@@ -30,7 +30,7 @@ const CANONICAL_SERVICES = [
     title: 'Construction Services',
     description:
       'End-to-end construction, civil work, and project execution with uncompromising quality.',
-    link: '/service',
+    link: '/servicepage',
     imageId: 'service-construction',
   },
   {
@@ -38,7 +38,7 @@ const CANONICAL_SERVICES = [
     title: 'Home & Interior',
     description:
       'Interior design, modular kitchen, renovation, and turnkey solutions for modern living.',
-    link: '/service',
+    link: '/servicepage',
     imageId: 'service-interior',
   },
   {
@@ -46,7 +46,7 @@ const CANONICAL_SERVICES = [
     title: 'Bricknbar E-commerce',
     description:
       'The premier online platform for sourcing premium building & construction materials.',
-    link: '/service',
+    link: '/servicepage',
     imageId: 'service-bricknbar',
   },
 ];
@@ -220,7 +220,7 @@ export default function HomePage() {
                 href={service.link}
                 className="block border-t border-primary-foreground/10 py-16"
               >
-                <h3 className="text-3xl mb-2">{service.title}</h3>
+                <h3 className="text-3xl mb-2">{service                                                          .title}</h3>
                 <p className="opacity-70">{service.description}</p>
               </Link>
             </Reveal>
