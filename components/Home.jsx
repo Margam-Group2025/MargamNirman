@@ -255,12 +255,14 @@ export default function HomePage() {
                     Access a curated catalog of premium building materials. From foundation to finishing touches, Bricknbar connects you with quality.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link 
-                      href="www.bricknbar.com" 
-                      className="inline-flex items-center justify-center gap-2 bg-soft-gold text-primary px-8 py-4 rounded-sm font-medium hover:bg-white transition-colors"
-                    >
-                      Shop Materials <ArrowRight className="w-4 h-4" />
-                    </Link>
+                <a
+                  href="https://www.bricknbar.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-soft-gold text-primary px-8 py-4 rounded-sm font-medium hover:bg-white transition-colors"
+                >
+                  Shop Materials <ArrowRight className="w-4 h-4" />
+                  </a>
                     <Link 
                       href="/consultation" 
                       className="inline-flex items-center justify-center gap-2 border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded-sm font-medium hover:bg-primary-foreground hover:text-black transition-colors"
