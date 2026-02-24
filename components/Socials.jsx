@@ -24,10 +24,10 @@ const socials =[
 ]
 const Socials = ({conatinerStyles , iconStyles}) => {
   return (
-    <div className={`${conatinerStyles}`}>
+    <div className={`₹{conatinerStyles}`}>
       {socials.map((item,index)=>{
         return(
-          <Link href={item.path} key={index} className={`${iconStyles}`}>
+          <Link href={item.path} key={index} className={`₹{iconStyles}`}>
             {item.icon}
           </Link>
         )

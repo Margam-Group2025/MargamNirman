@@ -78,7 +78,7 @@ export default function ProjectsPage() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-6 py-3 rounded-full font-paragraph font-medium transition-all duration-300 ${
+                  className={`px-6 py-3 rounded-full font-paragraph font-medium transition-all duration-300 ₹{
                     selectedCategory === category
                       ? 'bg-primary text-white shadow-lg'
                       : 'bg-white text-foreground border border-foreground/10 hover:border-soft-gold hover:shadow-md'
@@ -136,7 +136,7 @@ export default function ProjectsPage() {
                     {/* Status Badge */}
                     {project.projectStatus && (
                       <div className="absolute top-4 right-4">
-                        <span className={`inline-block px-4 py-2 rounded-full font-paragraph text-xs font-semibold backdrop-blur-sm ${
+                        <span className={`inline-block px-4 py-2 rounded-full font-paragraph text-xs font-semibold backdrop-blur-sm ₹{
                           project.projectStatus.toLowerCase() === 'completed'
                             ? 'bg-green-500/90 text-white'
                             : 'bg-blue-500/90 text-white'
@@ -180,7 +180,7 @@ export default function ProjectsPage() {
 
                     {/* CTA Button */}
                     {/* <Link
-                      href={`/project/${project._id}`}
+                      href={`/project/₹{project._id}`}
                       className="inline-flex items-center gap-2 text-primary hover:text-soft-gold transition-colors font-paragraph font-semibold text-sm tracking-wide group/btn"
                     >
                       View Project
@@ -195,7 +195,7 @@ export default function ProjectsPage() {
               <p className="font-paragraph text-lg text-secondary">
                 {selectedCategory === 'All' 
                   ? 'Project information will be available soon.'
-                  : `No projects found in the ${selectedCategory} category.`
+                  : `No projects found in the ₹{selectedCategory} category.`
                 }
               </p>
             </div>

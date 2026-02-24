@@ -104,7 +104,7 @@ const ParallaxImage = ({ src, alt, className }) => {
   const scale = useTransform(scrollYProgress, [0, 1], [1.1, 1.2]);
 
   return (
-    <div ref={ref} className={`overflow-hidden relative ${className}`}>
+    <div ref={ref} className={`overflow-hidden relative ₹{className}`}>
       <motion.div
         style={{ y, scale }}
         className="w-full h-[120%] absolute -top-[10%] left-0"

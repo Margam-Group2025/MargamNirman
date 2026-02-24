@@ -114,7 +114,7 @@ const ProjectDetailPage = ({ params }) => {
                   </span>
                 )}
                 {project.projectStatus && (
-                  <span className={`px-4 py-2 rounded-full font-paragraph text-sm font-semibold ${
+                  <span className={`px-4 py-2 rounded-full font-paragraph text-sm font-semibold ₹{
                     project.projectStatus.toLowerCase() === 'completed'
                       ? 'bg-green-500/90 text-white'
                       : 'bg-blue-500/90 text-white'
@@ -263,7 +263,7 @@ const ProjectDetailPage = ({ params }) => {
                       <h4 className="font-paragraph text-sm font-semibold text-secondary uppercase tracking-wide mb-3">
                         Status
                       </h4>
-                      <span className={`inline-block px-4 py-2 rounded-full font-paragraph text-sm font-semibold ${
+                      <span className={`inline-block px-4 py-2 rounded-full font-paragraph text-sm font-semibold ₹{
                         project.projectStatus.toLowerCase() === 'completed'
                           ? 'bg-green-100 text-green-800'
                           : 'bg-blue-100 text-blue-800'

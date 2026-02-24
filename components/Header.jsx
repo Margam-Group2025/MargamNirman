@@ -12,6 +12,7 @@ const Links = [
   { name: "Projects", to: "/project" },
   { name: "Consultation", to: "/consultation" },
   { name: "Contact", to: "/contact" },
+  { name: "Login", to: "/loginpage" },
 ];
 
 const Header = () => {
@@ -43,7 +44,7 @@ const Header = () => {
             </ul>
 
             {/* Button */}
-            <Link href="/contact">
+            <Link href="/loginpage">
             <button
               className="w-[200px] h-[54px] py-[5px] pl-[10px] pr-[5px] flex 
               items-center justify-between min-w-[200px] bg-white group"
@@ -52,7 +53,7 @@ const Header = () => {
                 className="flex-1 text-center tracking-[1.2px] font-primary 
                 font-bold text-primary text-sm uppercase"
               >
-                Get a quote
+                Login
               </div>
               <div className="w-11 h-11 bg-primary flex items-center justify-center">
                 <RiArrowRightUpLine

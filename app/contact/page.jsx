@@ -284,7 +284,7 @@ export default function ContactPage() {
                       Address
                     </h4>
                     <p className="font-paragraph text-base text-foreground">
-                      Margam Nirman,3rd Floor C/o-Hdfc bank,<br />Biju Pattnaik College Rd <br />Jaydev Vihar Bhubaneswar,odisha 751013
+                      Margam Nirman,2rd Floor C/o-Hdfc bank,<br />Biju Pattnaik College Rd <br />Jaydev Vihar Bhubaneswar,odisha 751013
                     </p>
                   </div>
 
