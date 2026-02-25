@@ -52,7 +52,7 @@ const Services = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
-                  className={`grid lg:grid-cols-2 gap-12 items-center ₹{
+                  className={`grid lg:grid-cols-2 gap-12 items-center ${
                     index % 2 === 1 ? 'lg:flex-row-reverse' : ''
                   }`}
                 >
@@ -105,7 +105,7 @@ const Services = () => {
                     )}
 
                     <Link
-                      href={`/servicepage/₹{service._id}`}
+                      href={`/servicepage/${service._id}`}
                       className="inline-flex items-center gap-2 bg-primary text-white rounded-lg px-6 py-3 font-paragraph font-medium hover:bg-primary/90 transition-colors"
                     >
                       Learn More

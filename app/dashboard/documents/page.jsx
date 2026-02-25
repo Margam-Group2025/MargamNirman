@@ -166,7 +166,7 @@ export default function ClientDocuments() {
                 <button
                   key={type}
                   onClick={() => setActiveType(type)}
-                  className={`px-6 py-2 rounded-lg transition-colors ₹{
+                  className={`px-6 py-2 rounded-lg transition-colors ${
                     activeType === type
                       ? "bg-[#1e3a8a] text-white"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
@@ -190,7 +190,7 @@ export default function ClientDocuments() {
                   <div className="p-6">
                     <div className="flex items-start justify-between mb-4">
                       <div
-                        className={`p-3 rounded-lg ₹{
+                        className={`p-3 rounded-lg ${
                           doc.type === "Legal"
                             ? "bg-blue-100"
                             : doc.type === "Financial"
@@ -199,7 +199,7 @@ export default function ClientDocuments() {
                         }`}
                       >
                         <Icon
-                          className={`h-6 w-6 ₹{
+                          className={`h-6 w-6 ${
                             doc.type === "Legal"
                               ? "text-[#1e3a8a]"
                               : doc.type === "Financial"
@@ -209,7 +209,7 @@ export default function ClientDocuments() {
                         />
                       </div>
                       <span
-                        className={`px-3 py-1 rounded-full text-xs ₹{
+                        className={`px-3 py-1 rounded-full text-xs ${
                           doc.type === "Legal"
                             ? "bg-blue-100 text-blue-800"
                             : doc.type === "Financial"

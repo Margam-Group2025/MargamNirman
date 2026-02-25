@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import toast from "react-hot-toast";
+
 import {
   Building2,
   Mail,
@@ -29,12 +31,12 @@ export default function Login() {
   try {
     // Basic validation
     if (!formData.email || !formData.password) {
-      alert("Email and Password are required");
+      toast.error("Email and Password are required");
       return;
     }
 
     if (!isLogin && (!formData.name || !formData.phone)) {
-      alert("All fields are required");
+      toast.error("All fields are required");
       return;
     }
 
@@ -53,7 +55,7 @@ export default function Login() {
     const data = await res.json();
 
     if (!res.ok) {
-      alert(data.message);
+      toast.error(data.message);
       return;
     }
 
@@ -66,13 +68,13 @@ export default function Login() {
       // Redirect after login
       window.location.href = "/dashboard";
     } else {
-      alert("Registration successful. Please login.");
+      toast.success("Registration successful. Please login.");
       switchTab(true);
     }
 
   } catch (error) {
     console.error(error);
-    alert("Something went wrong");
+    toast.error("Something went wrong");
   }
 };
 
@@ -167,7 +169,7 @@ export default function Login() {
             <div className="flex bg-gray-100 rounded-xl p-1 mb-8">
               <button
                 onClick={() => switchTab(true)}
-                className={`flex-1 py-2 rounded-lg text-sm font-semibold transition ₹{
+                className={`flex-1 py-2 rounded-lg text-sm font-semibold transition ${
                   isLogin
                     ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
                     : "text-gray-500"
@@ -178,7 +180,7 @@ export default function Login() {
 
               <button
                 onClick={() => switchTab(false)}
-                className={`flex-1 py-2 rounded-lg text-sm font-semibold transition ₹{
+                className={`flex-1 py-2 rounded-lg text-sm font-semibold transition ${
                   !isLogin
                     ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
                     : "text-gray-500"

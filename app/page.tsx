@@ -26,7 +26,7 @@ export default function RootLayout() {
 
         {/* Sticky Header */}
         <div
-          className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ₹{
+          className={`fixed top-0 left-0 w-full z-50 transition-transform duration-500 ${
             headerActive ? "translate-y-0" : "-translate-y-full"
           }`}
         >

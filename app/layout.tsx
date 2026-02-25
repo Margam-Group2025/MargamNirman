@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, DM_Sans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 export const dynamic = "force-static"; 
 const dmSans = DM_Sans({
@@ -29,8 +30,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`₹{dmSans.variable} ₹{barlow.variable} antialiased`}>
+      <body className={`${dmSans.variable} ${barlow.variable} antialiased`}>
         {children}
+        <Toaster position="top-right" />
       </body>
     </html>
   );

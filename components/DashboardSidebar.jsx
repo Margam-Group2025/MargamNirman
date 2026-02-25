@@ -41,7 +41,7 @@ export default function DashboardSidebar() {
         className={`
           fixed lg:sticky top-0 h-screen bg-[#f9fafb] border-r border-gray-200 w-64 flex flex-col
           transition-transform duration-300 z-40
-          ₹{isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
+          ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
       >
         {/* Logo */}
@@ -68,7 +68,7 @@ export default function DashboardSidebar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`
                     flex items-center gap-3 px-4 py-3 rounded-lg transition-colors
-                    ₹{
+                    ${
                       isActive
                         ? "bg-[#1e3a8a] text-white"
                         : "text-blue-900 hover:bg-blue-900 hover:text-white"

@@ -157,20 +157,20 @@ export default function ClientPayments() {
             <div className="bg-white rounded-xl shadow-md p-6">
               <div className="text-sm text-gray-600 mb-2">Total Price</div>
               <div className="text-3xl text-gray-900">
-                ₹{paymentSummary.totalPrice.toLocaleString()}
+                ${paymentSummary.totalPrice.toLocaleString()}
               </div>
             </div>
 
             <div className="bg-white rounded-xl shadow-md p-6">
               <div className="text-sm text-gray-600 mb-2">Amount Paid</div>
               <div className="text-3xl text-[#10b981]">
-                ₹{paymentSummary.paidAmount.toLocaleString()}
+                ${paymentSummary.paidAmount.toLocaleString()}
               </div>
               <div className="mt-2">
                 <div className="w-full bg-gray-200 rounded-full h-2">
                   <div
                     className="bg-[#10b981] h-2 rounded-full transition-all"
-                    style={{ width: `₹{paymentSummary.paymentPercentage}%` }}
+                    style={{ width: `${paymentSummary.paymentPercentage}%` }}
                   />
                 </div>
                 <div className="text-sm text-gray-600 mt-1">{paymentSummary.paymentPercentage}% Complete</div>
@@ -180,7 +180,7 @@ export default function ClientPayments() {
             <div className="bg-white rounded-xl shadow-md p-6">
               <div className="text-sm text-gray-600 mb-2">Remaining Amount</div>
               <div className="text-3xl text-orange-600">
-                ₹{paymentSummary.remainingAmount.toLocaleString()}
+                ${paymentSummary.remainingAmount.toLocaleString()}
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@ export default function ClientPayments() {
                     <tr key={installment.id} className="hover:bg-gray-50">
                       <td className="px-6 py-4 text-gray-900">#{installment.installmentNo}</td>
                       <td className="px-6 py-4 text-gray-900">{installment.description}</td>
-                      <td className="px-6 py-4 text-gray-900">₹{installment.amount.toLocaleString()}</td>
+                      <td className="px-6 py-4 text-gray-900">${installment.amount.toLocaleString()}</td>
                       <td className="px-6 py-4 text-gray-600">{installment.dueDate}</td>
                       <td className="px-6 py-4 text-gray-600">
                         {installment.paidDate || "-"}
@@ -249,7 +249,7 @@ export default function ClientPayments() {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <button className="bg-[#10b981] text-white px-6 py-2 rounded-lg hover:bg-[#10b981]/90">
-                    Pay ₹85,000 Now
+                    Pay $85,000 Now
                   </button>
                   <button className="bg-white text-orange-800 px-6 py-2 rounded-lg border border-orange-300 hover:bg-orange-50">
                     Set Reminder
@@ -263,3 +263,4 @@ export default function ClientPayments() {
     </div>
   );
 }
+  

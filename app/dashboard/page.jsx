@@ -47,7 +47,7 @@ export default function ClientDashboard() {
     },
     {
       id: 2,
-      title: "Payment Received - ₹85,000",
+      title: "Payment Received - $85,000",
       date: "Feb 5, 2026",
       type: "payment",
     },
@@ -117,7 +117,7 @@ export default function ClientDashboard() {
                 </div>
               </div>
               <div className="text-2xl text-gray-900 mb-1">
-                ₹{financials.totalPrice.toLocaleString()}
+                ${financials.totalPrice.toLocaleString()}
               </div>
               <div className="text-sm text-gray-600">Total Price</div>
             </div>
@@ -129,7 +129,7 @@ export default function ClientDashboard() {
                 </div>
               </div>
               <div className="text-2xl text-gray-900 mb-1">
-                ₹{financials.paidAmount.toLocaleString()}
+                ${financials.paidAmount.toLocaleString()}
               </div>
               <div className="text-sm text-gray-600">Amount Paid</div>
             </div>
@@ -141,7 +141,7 @@ export default function ClientDashboard() {
                 </div>
               </div>
               <div className="text-2xl text-gray-900 mb-1">
-                ₹{financials.remainingAmount.toLocaleString()}
+                ${financials.remainingAmount.toLocaleString()}
               </div>
               <div className="text-sm text-gray-600">Remaining Amount</div>
             </div>
@@ -153,7 +153,7 @@ export default function ClientDashboard() {
                 </div>
               </div>
               <div className="text-2xl text-gray-900 mb-1">
-                ₹{financials.nextInstallment.toLocaleString()}
+                ${financials.nextInstallment.toLocaleString()}
               </div>
               <div className="text-sm text-gray-600">Next Installment</div>
               <div className="text-xs text-orange-600 mt-1">Due: {financials.nextDueDate}</div>
@@ -178,7 +178,7 @@ export default function ClientDashboard() {
                     <div className="w-full bg-gray-200 rounded-full h-3">
                       <div
                         className="bg-[#10b981] h-3 rounded-full transition-all"
-                        style={{ width: `₹{constructionProgress.overall}%` }}
+                        style={{ width: `${constructionProgress.overall}%` }}
                       />
                     </div>
                   </div>
@@ -191,7 +191,7 @@ export default function ClientDashboard() {
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
                         className="bg-[#1e3a8a] h-2 rounded-full transition-all"
-                        style={{ width: `₹{constructionProgress.foundation}%` }}
+                        style={{ width: `${constructionProgress.foundation}%` }}
                       />
                     </div>
                   </div>
@@ -204,7 +204,7 @@ export default function ClientDashboard() {
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
                         className="bg-[#1e3a8a] h-2 rounded-full transition-all"
-                        style={{ width: `₹{constructionProgress.structure}%` }}
+                        style={{ width: `${constructionProgress.structure}%` }}
                       />
                     </div>
                   </div>
@@ -217,7 +217,7 @@ export default function ClientDashboard() {
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
                         className="bg-[#1e3a8a] h-2 rounded-full transition-all"
-                        style={{ width: `₹{constructionProgress.plumbing}%` }}
+                        style={{ width: `${constructionProgress.plumbing}%` }}
                       />
                     </div>
                   </div>
@@ -230,7 +230,7 @@ export default function ClientDashboard() {
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
                         className="bg-[#1e3a8a] h-2 rounded-full transition-all"
-                        style={{ width: `₹{constructionProgress.electrical}%` }}
+                        style={{ width: `${constructionProgress.electrical}%` }}
                       />
                     </div>
                   </div>
@@ -243,7 +243,7 @@ export default function ClientDashboard() {
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div
                         className="bg-[#1e3a8a] h-2 rounded-full transition-all"
-                        style={{ width: `₹{constructionProgress.finishing}%` }}
+                        style={{ width: `${constructionProgress.finishing}%` }}
                       />
                     </div>
                   </div>
@@ -259,7 +259,7 @@ export default function ClientDashboard() {
                   {recentUpdates.map((update) => (
                     <div key={update.id} className="flex items-start gap-3 pb-4 border-b border-gray-100 last:border-0">
                       <div
-                        className={`p-2 rounded-lg flex-shrink-0 ₹{
+                        className={`p-2 rounded-lg flex-shrink-0 ${
                           update.type === "construction"
                             ? "bg-blue-100"
                             : update.type === "payment"
